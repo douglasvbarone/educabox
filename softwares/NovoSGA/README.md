@@ -4,7 +4,7 @@ Versão All-in-One da versão 1.5 do [Sistema de gerenciamento de fila de atendi
 
 ## Requisitos
 
-- [Docker Engine](https://docs.docker.com/engine/install/)
+- [Docker Engine](https://docs.docker.com/engine/install/) (script de instalação disponível)
 - [Docker Compose](https://docs.docker.com/compose/install/) (normalmente incluso na instalação do Docker Engine)
 
 ## Para subir o sistema
@@ -12,13 +12,13 @@ Versão All-in-One da versão 1.5 do [Sistema de gerenciamento de fila de atendi
 ### Clone este projeto (use a URL deste repositório):
 
 ```
-git clone https://url novosga
+git clone [https://url](https://github.com/educabox/educabox) educabox
 ```
 
 ### Entre na pasta clonada
 
 ```
-cd novosga
+cd educabox/softwares/NovoSGA/
 ```
 
 ### Configurar variáveis de ambiente
@@ -29,7 +29,7 @@ As variáveis podem ser configuradas no sistema (export) ou através do arquivo 
 cp .env.example .env
 ```
 
-Edite as variáveis usando um editor de texto, por exemplo:
+(Opcional) Edite as variáveis usando um editor de texto, por exemplo:
 
 ```
 nano .env
@@ -48,6 +48,8 @@ docker compose up -d
 ### Primeiro acesso
 
 Navegue para o endereço IP da máquina ou, se estiver acessando da mesma, use localhost: `http://localhost`.
+
+Em outro computador/box, acesse o painel pela URL `http://ip_da_box/painel`
 
 Durante a primeira execução, o banco de dados será inicializado. Isso normalmente demora alguns minutos, acompanhe os logs para saber quando tudo estiver pronto.
 
